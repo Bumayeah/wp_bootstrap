@@ -36,7 +36,6 @@
           'Limited seats available. Join 500+ tech professionals at the most inspiring conference of the year.',
         buttonText: 'Register now',
         buttonHref: '#',
-        decorImage: '/src/assets/img/landing/yoga-studio/features/flower.svg',
       }"
     />
 
@@ -56,14 +55,9 @@
       heading="Register before April 1st and save 30%"
       :cta="{ text: 'Claim early bird ticket', href: '#' }"
       :image="{
-        src: '/src/assets/img/event/event-05.jpg',
+        src: `${baseUrl}/assets/img/event/event-05.jpg`,
         width: 534,
         alt: 'Conference',
-      }"
-      :bgImage="{
-        src: '/src/assets/img/landing/yoga-studio/cta/bg.svg',
-        width: 186,
-        alt: 'Background decor',
       }"
     />
 
@@ -101,11 +95,12 @@
 <script setup lang="ts">
 import ClassesTabs from '@/components/ClassesTabs.vue'
 import HeroSlider from '@/components/HeroSlider.vue'
+const baseUrl = import.meta.env.VITE_BASE_URL
 
 const heroSlides = [
-  { image: '/src/assets/img/event/event-01.jpg' },
-  { image: '/src/assets/img/event/event-17.jpg' },
-  { image: '/src/assets/img/event/event-03.jpeg' },
+  { image: `${baseUrl}/assets/img/event/event-01.jpg` },
+  { image: `${baseUrl}/assets/img/event/event-17.jpg` },
+  { image: `${baseUrl}/assets/img/event/event-03.jpeg` },
 ]
 import TrainersGrid from '@/components/TrainersGrid.vue'
 import CtaBanner from '@/components/CtaBanner.vue'
@@ -120,40 +115,40 @@ const advantageFeatures = [
   {
     icon: 'cpu',
     title: 'AI & Machine Learning',
-    bgImage: '/src/assets/img/tech/item-04.jpg',
+    bgImage: `${baseUrl}/assets/img/tech/item-04.jpg`,
     description: 'Orci purus, in tellus sit bibendum scelerisque adipiscing venenatis.',
   },
   {
     icon: 'code',
     title: 'Live coding sessions',
-    bgImage: '/src/assets/img/tech/item-08.jpg',
+    bgImage: `${baseUrl}/assets/img/tech/item-08.jpg`,
     description:
       'Non est nullam amet netus ut vitae, penatibus lacus a ut sed molestie lectus lobortis.',
   },
   {
     icon: 'network',
     title: 'Networking',
-    bgImage: '/src/assets/img/tech/item-12.jpg',
+    bgImage: `${baseUrl}/assets/img/tech/item-12.jpg`,
     description: 'Nisi vestibulum quam amet, egestas aliquam cursus mauris dignissim tellus.',
   },
   {
     icon: 'cafe',
     title: 'Lounge & catering',
-    bgImage: '/src/assets/img/tech/item-16.jpg',
+    bgImage: `${baseUrl}/assets/img/tech/item-16.jpg`,
     description:
       'Amet diam imperdiet nisi non eu, pharetra lorem amet, ac ut aliquam diam sed cras.',
   },
   {
     icon: 'award',
     title: 'Certificates',
-    bgImage: '/src/assets/img/tech/item-20.jpg',
+    bgImage: `${baseUrl}/assets/img/tech/item-20.jpg`,
     description:
       'Non est nullam amet netus ut vitae, penatibus lacus a ut sed molestie lectus lobortis.',
   },
   {
     icon: 'cloud',
     title: 'Cloud & DevOps',
-    bgImage: '/src/assets/img/tech/item-24.jpg',
+    bgImage: `${baseUrl}/assets/img/tech/item-24.jpg`,
     description:
       'Amet diam imperdiet nisi non eu, pharetra lorem amet, ac ut aliquam diam sed cras.',
   },
@@ -176,11 +171,11 @@ const footerSocialLinks = [
 ]
 
 const galleryImages = [
-  { src: '/src/assets/img/event/event-06.jpg' },
-  { src: '/src/assets/img/event/event-07.jpg' },
-  { src: '/src/assets/img/event/event-09.jpg' },
-  { src: '/src/assets/img/event/event-10.jpg' },
-  { src: '/src/assets/img/event/event-08.jpg' },
+  { src: `${baseUrl}/assets/img/event/event-06.jpg` },
+  { src: `${baseUrl}/assets/img/event/event-07.jpg` },
+  { src: `${baseUrl}/assets/img/event/event-09.jpg` },
+  { src: `${baseUrl}/assets/img/event/event-10.jpg` },
+  { src: `${baseUrl}/assets/img/event/event-08.jpg` },
 ]
 
 const pricingFeatures = [
@@ -233,42 +228,42 @@ const speakers = [
   {
     name: 'Alisa Black',
     role: 'AI Research Lead',
-    image: '/src/assets/img/people/female-01.jpg',
+    image: `${baseUrl}/assets/img/people/female-01.jpg`,
   },
   {
     name: 'Michelle Yang',
     role: 'Cloud Architect @ Google',
-    image: '/src/assets/img/people/female-02.png',
+    image: `${baseUrl}/assets/img/people/female-02.png`,
   },
   {
     name: 'Robert Fox',
     role: 'Founder, DevStream',
-    image: '/src/assets/img/people/man-01.png',
+    image: `${baseUrl}/assets/img/people/man-01.png`,
   },
   {
     name: 'Jane Cooper',
     role: 'CTO, FinTech Innovations',
-    image: '/src/assets/img/people/female-03.png',
+    image: `${baseUrl}/assets/img/people/female-03.png`,
   },
   {
     name: 'Cody Fisher',
     role: 'Open Source Advocate',
-    image: '/src/assets/img/people/man-02.png',
+    image: `${baseUrl}/assets/img/people/man-02.png`,
   },
   {
     name: 'Jenny Wilson',
     role: 'Diversity in Tech Lead',
-    image: '/src/assets/img/people/female-04.png',
+    image: `${baseUrl}/assets/img/people/female-04.png`,
   },
   {
     name: 'Annette Black',
     role: 'Security Engineer',
-    image: '/src/assets/img/people/female-05.png',
+    image: `${baseUrl}/assets/img/people/female-05.png`,
   },
   {
     name: 'Ralph Edwards',
     role: 'DevOps & Platform Eng.',
-    image: '/src/assets/img/people/man-03.png',
+    image: `${baseUrl}/assets/img/people/man-03.png`,
   },
 ]
 
@@ -276,7 +271,7 @@ const workshops = [
   {
     id: 'ai-ml',
     label: 'AI & ML',
-    image: '/src/assets/img/tech/item-05.jpg',
+    image: `${baseUrl}/assets/img/tech/item-05.jpg`,
     title: 'Artificial Intelligence & Machine Learning',
     description:
       'Purus magna lectus feugiat arcu tellus vitae urna neque, eu velit in vulputate sodales ut tellus amet lorem sit consectetur quisque justo laoreet proin.',
@@ -307,7 +302,7 @@ const workshops = [
   {
     id: 'web-dev',
     label: 'Web Development',
-    image: '/src/assets/img/tech/item-39.jpg',
+    image: `${baseUrl}/assets/img/tech/item-39.jpg`,
     title: 'Modern Web Development',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lectus nec nunc bibendum facilisis pellentesque ut eros. Praesent bibendum sed mi aliquet tempus.',
@@ -338,7 +333,7 @@ const workshops = [
   {
     id: 'cloud-devops',
     label: 'Cloud & DevOps',
-    image: '/src/assets/img/tech/item-15.jpg',
+    image: `${baseUrl}/assets/img/tech/item-15.jpg`,
     title: 'Cloud & DevOps Engineering',
     description:
       'Varius purus dui nunc faucibus mauris iaculis tortor enim cursus quisque eu, vel amet massa suscipit cursus sit mattis quis magnis dignissim dui fames tortor.',
@@ -369,7 +364,7 @@ const workshops = [
   {
     id: 'cybersecurity',
     label: 'Cybersecurity',
-    image: '/src/assets/img/tech/item-28.jpg',
+    image: `${baseUrl}/assets/img/tech/item-28.jpg`,
     title: 'Cybersecurity Essentials',
     description:
       'At duis est ante tortor, dictum dictumst nisl erat. Tellus erat pharetra eget vestibulum. Netus eu sit cursus et vehicula porttitor nulla turpis a. In volutpat.',
@@ -400,7 +395,7 @@ const workshops = [
   {
     id: 'product',
     label: 'Product & Design',
-    image: '/src/assets/img/tech/item-25.jpg',
+    image: `${baseUrl}/assets/img/tech/item-25.jpg`,
     title: 'Product Thinking & UX Design',
     description:
       'Facilisi tempus pharetra, egestas dolor. Nulla lorem interdum cursus habitasse. Morbi aliquam, mauris, varius nulla tortor ut nullam. Est eu eu eget fames leo.',

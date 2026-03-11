@@ -1,3 +1,8 @@
+# TODO
+
+- Refactor components into Atoms
+- Add mocking WP api
+
 # wp_bootstrap
 
 This template should help get you started developing with Vue 3 in Vite.
