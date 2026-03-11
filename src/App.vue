@@ -1,10 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SpaPage from './pages/SpaPage.vue'
+</script>
 
 <template>
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Vite!</h1>
-    <button class="btn btn-primary">Primary button</button>
-  </div>
+  <SpaPage />
 </template>
 
 <style scoped></style>

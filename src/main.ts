@@ -1,7 +1,7 @@
-import { createApp } from 'vue'
+import { createApp, nextTick } from 'vue'
 import { createPinia } from 'pinia'
-import './scss/styles.scss'
-
+import initComponents from './theme/index.js'
+import './scss/theme.scss'
 import 'bootstrap'
 
 import App from './App.vue'
@@ -13,3 +13,7 @@ app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
+
+nextTick(() => {
+  initComponents()
+})
