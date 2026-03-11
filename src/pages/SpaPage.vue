@@ -154,7 +154,7 @@ const advantageFeatures = [
   },
 ]
 
-const logo = `<img src="/logo.png" width="32">`
+const logo = `<img src="${baseUrl}/logo.png" width="32">`
 
 const navLinks = [
   { label: 'Workshops', href: '#' },
