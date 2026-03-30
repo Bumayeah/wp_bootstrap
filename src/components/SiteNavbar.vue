@@ -50,7 +50,7 @@ onUnmounted(() => {
   >
     <div class="container">
       <!-- Brand -->
-      <a class="navbar-brand pe-sm-3" :href="brandHref ?? '#'">
+      <a class="navbar-brand fs-6 pe-sm-3" :href="brandHref ?? '#'">
         <span v-if="logoSvg" class="text-primary flex-shrink-0 me-2" v-html="logoSvg"></span>
         <span v-else class="text-primary flex-shrink-0 me-2">Logo</span>
         {{ brandName }}
